@@ -1,6 +1,5 @@
 package ua.org.smartjava.service;
 
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -40,10 +39,8 @@ public class JournalService {
         List<Journal> entries = new ArrayList<>();
         jdbcTemplate.query("SELECT * FROM JOURNAL",
                 new Object[]{},
-                (rs, row) -> {
-                    return new Journal(rs.getLong("id"), rs.getString("title"), rs.getString("summary"), new Date
-                            (rs.getTimestamp("created").getTime()));
-                }
+                (rs, row) -> new Journal(rs.getLong("id"), rs.getString("title"), rs.getString("summary"), new Date
+                        (rs.getTimestamp("created").getTime()))
         ).forEach(entry -> entries.add(entry));
         return entries;
     }
