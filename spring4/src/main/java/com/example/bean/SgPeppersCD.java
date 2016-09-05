@@ -1,14 +1,17 @@
-package com.example;
+package com.example.bean;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 
-@Named("metallicaCD")
-public class MetallicaCD implements CompactDisc {
+@Component("pepper")
+@Profile("prod")
+public class SgPeppersCD implements CompactDisc {
     private static final Logger LOGGER = LoggerFactory.getLogger(SgPeppersCD.class);
 
-    private String title = "Oxigen";
-    private String artist = "Metallica";
+    private String title = "Sgt. Pepper Lonely Hearts Club Band";
+    private String artist = "The Beatles";
 
     @Override
     public void play() {
