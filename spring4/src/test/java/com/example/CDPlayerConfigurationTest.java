@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.bean.CompactDisc;
+import com.example.beans.CompactDisc;
 
 import org.junit.Rule;
 import org.junit.Test;

@@ -1,8 +1,8 @@
 package com.example;
 
-import com.example.bean.CompactDisc;
-import com.example.bean.SgPeppersCD;
-import com.example.bean.ShopingCart;
+import com.example.beans.CompactDisc;
+import com.example.beans.SgPeppersCD;
+import com.example.beans.ShopingCart;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@ComponentScan("com.example.bean")
+@ComponentScan("com.example.beans")
 //@EnableAutoConfiguration
 public class CDPlayerConfiguration {
     private static final Logger LOGGER = LoggerFactory.getLogger(CDPlayerConfiguration.class);
