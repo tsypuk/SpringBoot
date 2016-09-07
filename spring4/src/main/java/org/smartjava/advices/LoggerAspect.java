@@ -1,4 +1,4 @@
-package com.example.advices;
+package org.smartjava.advices;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -6,7 +6,7 @@ import org.aspectj.lang.annotation.Before;
 @Aspect
 public class LoggerAspect {
 
-    @Before("execution(** com.example.beans.Performance.perform(..))")
+    @Before("execution(** org.smartjava.beans.Performance.perform(..))")
     public void silenceCellPhones() {
         System.err.println("ASPECT");
     }

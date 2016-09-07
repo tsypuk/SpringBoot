@@ -1,4 +1,4 @@
-package com.example.beans;
+package org.smartjava.beans;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

@@ -1,8 +1,8 @@
-package com.example;
+package org.smartjava;
 
-import com.example.advices.LoggerAspect;
-import com.example.advices.AudienceAspect;
-import com.example.beans.Performance;
+import org.smartjava.advices.LoggerAspect;
+import org.smartjava.advices.AudienceAspect;
+import org.smartjava.beans.Performance;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -28,4 +28,5 @@ public class ConcertConfig {
     public Performance performance() {
         return new Performance();
     }
+
 }

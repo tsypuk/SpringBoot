@@ -1,4 +1,4 @@
-package com.example.beans;
+package org.smartjava.beans;
 
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,6 @@
-package com.example;
+package org.smartjava;
 
-import com.example.beans.CompactDisc;
+import org.smartjava.beans.CompactDisc;
 
 import org.junit.Rule;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.example.beans;
+package org.smartjava.beans;
 
 public interface CompactDisc {
     void play();

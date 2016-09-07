@@ -1,6 +1,6 @@
-package com.example.beans;
+package org.smartjava.beans;
 
-import com.example.ConcertConfig;
+import org.smartjava.ConcertConfig;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

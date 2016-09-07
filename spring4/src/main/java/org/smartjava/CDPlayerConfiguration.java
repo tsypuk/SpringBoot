@@ -1,12 +1,13 @@
-package com.example;
+package org.smartjava;
 
-import com.example.beans.CompactDisc;
-import com.example.beans.SgPeppersCD;
-import com.example.beans.ShopingCart;
+import org.smartjava.beans.CompactDisc;
+import org.smartjava.beans.SgPeppersCD;
+import org.smartjava.beans.ShopingCart;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Conditional;
@@ -14,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@ComponentScan("com.example.beans")
+@ComponentScan("org.smartjava.beans")
 //@EnableAutoConfiguration
 public class CDPlayerConfiguration {
     private static final Logger LOGGER = LoggerFactory.getLogger(CDPlayerConfiguration.class);
