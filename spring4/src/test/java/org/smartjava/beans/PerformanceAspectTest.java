@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ConcertConfig.class)
-public class PerformanceTest {
+public class PerformanceAspectTest {
 
     @Autowired
     private Performance performance;
